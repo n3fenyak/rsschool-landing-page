@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;1,600&display=swap" rel="stylesheet">
+
+  <title>Coffee House</title>
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner container">
+      <a href="./index.html" aria-label="Coffee House home" class="logo">
+        <img src="./assets/icons/logo.svg" alt="Coffee House" class="logo__img">
+      </a>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#favorite-coffee" class="nav__link">Favorite Coffee</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#mobile-app" class="nav__link">Mobile App</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts" class="nav__link">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="./menu/" class="menu-link">
+        <span>Menu</span>
+        <img src="./assets/icons/coffee-cup.svg" alt="" class="menu-link__icon">
+      </a>
+    </div>
+  </header>
+  <main class="main">
+    <section class="container hero">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            <span class="accent">Enjoy</span> premium coffee at our charming cafe
+          </h1>
+          <p class="hero__text">With its inviting atmosphere and delicious coffee options, the Coffee House Resource is
+            a
+            popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite
+            beverage.</p>
+          <a href="./menu/" class="hero__button">Menu</a>
+        </div>
+      </div>
+    </section>
+    <section class="favorite-coffee" id="favorite-coffee">
+      <div class="container favorite-coffee__inner">
+        <h2 class="favorite-coffee__title">
+          Choose your
+          <span class="accent">favorite</span>
+          coffee
+        </h2>
+
+        <div class="slider">
+          <button class="slider__button slider__button--prev" type="button" aria-label="Previous coffee">
+            <img class="slider__arrow" src="./assets/icons/arrow.svg" alt="">
+          </button>
+
+          <div class="slider__content">
+            <img class="slider__image" src="./assets/images/coffee-slider-1.png" alt="S'mores Frappuccino">
+
+            <div class="slider__info">
+              <h3 class="slider__title">S'mores Frappuccino</h3>
+
+              <p class="slider__description">
+                This new drink takes an espresso and mixes it with brown
+                sugar and cinnamon before being topped with oat milk.
+              </p>
+
+              <p class="slider__price">$5.50</p>
+            </div>
+          </div>
+
+          <button class="slider__button slider__button--next" type="button" aria-label="Next coffee">
+            <img class="slider__arrow slider__arrow--next" src="./assets/icons/arrow.svg" alt="">
+          </button>
+        </div>
+        <div class="slider__controls">
+          <span class="slider__control slider__control--active"></span>
+          <span class="slider__control"></span>
+          <span class="slider__control"></span>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container about__inner">
+        <h2 class="about__title">
+          Resource is
+          <span class="accent">the perfect and cozy place</span>
+          where you can enjoy a variety of hot beverages, relax,
+          catch up with friends, or get some work done.
+        </h2>
+
+        <div class="about__images">
+          <div class="about__column">
+            <div class="about__image-box about__image-box--large">
+              <img class="about__image" src="./assets/images/about-1.jpg" alt="Woman drinking coffee">
+            </div>
+
+            <div class="about__image-box about__image-box--small">
+              <img class="about__image" src="./assets/images/about-2.jpg" alt="Cup of coffee">
+            </div>
+          </div>
+
+          <div class="about__column">
+            <div class="about__image-box about__image-box--small">
+              <img class="about__image" src="./assets/images/about-3.jpg" alt="Man drinking coffee">
+            </div>
+
+            <div class="about__image-box about__image-box--large">
+              <img class="about__image" src="./assets/images/about-4.jpg" alt="Coffee">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mobile-app" id="mobile-app">
+      <div class="container mobile-app__inner">
+        <div class="mobile-app__offer">
+          <h2 class="mobile-app__title">
+            <span class="accent">Download</span>
+            our app to start ordering
+          </h2>
+
+          <p class="mobile-app__text">
+            Download the Resource app today and experience the comfort of
+            ordering your favorite coffee from wherever you are
+          </p>
+
+          <div class="mobile-app__buttons">
+            <a class="store-button" href="#" aria-label="Download on the App Store">
+              <img class="store-button__icon" src="./assets/icons/apple.svg" alt="">
+
+              <span class="store-button__text">
+                <span class="store-button__caption">Available on the</span>
+                <span class="store-button__name">App Store</span>
+              </span>
+            </a>
+
+            <a class="store-button" href="#" aria-label="Get it on Google Play">
+              <img class="store-button__icon" src="./assets/icons/google.svg" alt="">
+
+              <span class="store-button__text">
+                <span class="store-button__caption">Available on</span>
+                <span class="store-button__name">Google Play</span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="mobile-app__screens">
+          <img class="mobile-app__image" src="./assets/images/mobile-screens.png" alt="mobile application">
+        </div>
+
+      </div>
+    </section>
+    <footer class="contacts" id="contacts">
+      <div class="container">
+        <div class="contacts__inner">
+          <div class="contacts__offer">
+            <h2 class="contacts__title">
+              Sip, Savor, Smile.
+              <span class="accent">It’s coffee time!</span>
+            </h2>
+
+            <div class="contacts__socials">
+              <a class="social-button" href="#" aria-label="Twitter">
+                <img src="./assets/icons/twitter.svg" alt="">
+              </a>
+
+              <a class="social-button" href="#" aria-label="Instagram">
+                <img src="./assets/icons/instagram.svg" alt="">
+              </a>
+
+              <a class="social-button" href="#" aria-label="Facebook">
+                <img src="./assets/icons/facebook.svg" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="contacts__info">
+            <h3 class="contacts__subtitle">Contact us</h3>
+
+            <div class="contacts__list">
+              <a class="contacts__link" href="https://maps.google.com/?q=8558+Green+Rd+LA" target="_blank"
+                rel="noopener noreferrer">
+                <img class="contacts__icon" src="./assets/icons/pin-alt.svg" alt="">
+                <span>8558 Green Rd., LA</span>
+              </a>
+
+              <a class="contacts__link" href="tel:+16035550123">
+                <img class="contacts__icon" src="./assets/icons/phone.svg" alt="">
+                <span>+1 (603) 555-0123</span>
+              </a>
+
+              <p class="contacts__schedule">
+                <img class="contacts__icon" src="./assets/icons/clock.svg" alt="">
+                <span>Mon-Sat: 9:00–23:00</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <footer></footer>
+</body>
+
+</html>
