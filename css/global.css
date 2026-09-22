@@ -14,6 +14,19 @@
   --color-border-inverse: #665f55;
 }
 
+[data-theme='dark'] {
+  --color-text-primary: #e1d4c9;
+  --color-text-inverse: #e1d4c9;
+  --color-text-accent: #b0907a;
+
+  --color-bg-page: #292826;
+  --color-bg-container: #403f3d;
+  --color-bg-overlay: rgb(41 40 38 / 80%);
+
+  --color-border-primary: #665f55;
+  --color-border-inverse: #c1b6ad;
+}
+
 * {
   box-sizing: border-box;
 }

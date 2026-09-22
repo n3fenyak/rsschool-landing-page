@@ -9,16 +9,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;1,600&display=swap" rel="stylesheet">
 
+  <link rel="icon" href="./assets/icons/coffee-cup.svg" type="image/svg+xml">
   <title>Coffee House</title>
+
   <link rel="stylesheet" href="./css/global.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/tablet.css">
+  <link rel="stylesheet" href="./css/mobile.css">
+
 </head>
 
 <body>
   <header class="header">
     <div class="header__inner container">
       <a href="./index.html" aria-label="Coffee House home" class="logo">
-        <img src="./assets/icons/logo.svg" alt="Coffee House" class="logo__img">
+        <img src="./assets/icons/logo.svg" alt="Coffee House" class="logo__img logo__img--light">
+        <img src="./assets/icons/logo-dark.svg" alt="Coffee House" class="logo__img logo__img--dark">
       </a>
 
       <nav class="nav">
@@ -37,11 +43,31 @@
           </li>
         </ul>
       </nav>
+      <div class="header__actions">
+        <button class="theme-switcher" type="button" aria-label="Switch theme">
+          <span class="theme-switcher__item theme-switcher__item--sun">
+            <img class="theme-switcher__sun" src="./assets/icons/sun.svg" alt="">
+          </span>
 
-      <a href="./menu/" class="menu-link">
-        <span>Menu</span>
-        <img src="./assets/icons/coffee-cup.svg" alt="" class="menu-link__icon">
-      </a>
+          <span class="theme-switcher__item theme-switcher__item--moon">
+            <img class="theme-switcher__moon" src="./assets/icons/moon.svg" alt="">
+          </span>
+        </button>
+
+        <button class="burger" type="button" aria-label="Open menu">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+        <a href="./menu/" class="menu-link">
+          <span>Menu</span>
+          <img src="./assets/icons/coffee-cup.svg" alt="" class="menu-link__icon">
+        </a>
+
+      </div>
+
+
+
+
     </div>
   </header>
   <main class="main">
@@ -55,7 +81,10 @@
             a
             popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite
             beverage.</p>
-          <a href="./menu/" class="hero__button">Menu</a>
+          <a href="./menu/" class="hero__button">
+            <span>Menu</span>
+            <img class="hero__button-icon" src="./assets/icons/coffee-cup.svg" alt="">
+          </a>
         </div>
       </div>
     </section>
@@ -69,27 +98,29 @@
 
         <div class="slider">
           <button class="slider__button slider__button--prev" type="button" aria-label="Previous coffee">
-            <img class="slider__arrow" src="./assets/icons/arrow.svg" alt="">
+            <svg class="slider__arrow" width="14" height="13" viewBox="0 0 14 13" fill="none" aria-hidden="true">
+              <path d="M13 6.5H0.5M6.5 12.5L0.5 6.5L6.5 0.5" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </button>
-
           <div class="slider__content">
             <img class="slider__image" src="./assets/images/coffee-slider-1.png" alt="S'mores Frappuccino">
-
             <div class="slider__info">
               <h3 class="slider__title">S'mores Frappuccino</h3>
-
               <p class="slider__description">
                 This new drink takes an espresso and mixes it with brown
                 sugar and cinnamon before being topped with oat milk.
               </p>
-
               <p class="slider__price">$5.50</p>
             </div>
           </div>
-
           <button class="slider__button slider__button--next" type="button" aria-label="Next coffee">
-            <img class="slider__arrow slider__arrow--next" src="./assets/icons/arrow.svg" alt="">
+            <svg class="slider__arrow" width="14" height="13" viewBox="0 0 14 13" fill="none" aria-hidden="true">
+              <path d="M13 6.5H0.5M6.5 12.5L0.5 6.5L6.5 0.5" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </button>
+
         </div>
         <div class="slider__controls">
           <span class="slider__control slider__control--active"></span>
@@ -144,8 +175,10 @@
           </p>
 
           <div class="mobile-app__buttons">
-            <a class="store-button" href="#" aria-label="Download on the App Store">
+            <a class="store-button" href="https://www.apple.com/app-store/" target="_blank"
+              aria-label="Download on the App Store">
               <img class="store-button__icon" src="./assets/icons/apple.svg" alt="">
+
 
               <span class="store-button__text">
                 <span class="store-button__caption">Available on the</span>
@@ -153,8 +186,11 @@
               </span>
             </a>
 
-            <a class="store-button" href="#" aria-label="Get it on Google Play">
+            <a class="store-button" href="https://play.google.com/store" target="_blank"
+              aria-label="Get it on Google Play">
               <img class="store-button__icon" src="./assets/icons/google.svg" alt="">
+
+
 
               <span class="store-button__text">
                 <span class="store-button__caption">Available on</span>
@@ -181,16 +217,16 @@
           </h2>
 
           <div class="contacts__socials">
-            <a class="social-button" href="#" aria-label="Twitter">
-              <img src="./assets/icons/twitter.svg" alt="">
+            <a class="social-button" href="https://x.com/" aria-label="Twitter">
+              <img src="./assets/icons/twitter.svg" alt="twitter" target="_blank">
             </a>
 
-            <a class="social-button" href="#" aria-label="Instagram">
-              <img src="./assets/icons/instagram.svg" alt="">
+            <a class="social-button" href="https://www.instagram.com/" aria-label="Instagram">
+              <img src="./assets/icons/instagram.svg" alt="insta" target="_blank">
             </a>
 
-            <a class="social-button" href="#" aria-label="Facebook">
-              <img src="./assets/icons/facebook.svg" alt="">
+            <a class="social-button" href="https://www.facebook.com/" aria-label="Facebook">
+              <img src="./assets/icons/facebook.svg" alt="fb" target="_blank">
             </a>
           </div>
         </div>
@@ -219,8 +255,8 @@
       </div>
     </div>
   </footer>
-
+  <script src="./js/main.js"></script>
 </body>
-<script src="./js/main.js"></script>
+
 
 </html>
