@@ -69,10 +69,30 @@
           <img src="../assets/icons/coffee-cup.svg" alt="" class="menu-link__icon">
         </div>
       </div>
-
-
     </div>
   </header>
+
+  <div class="mobile-menu">
+    <nav class="mobile-menu__nav">
+      <a href="#favorite-coffee" class="mobile-menu__link">
+        Favorite Coffee
+      </a>
+      <a href="#about" class="mobile-menu__link">
+        About
+      </a>
+      <a href="#mobile-app" class="mobile-menu__link">
+        Mobile App
+      </a>
+      <a href="#contacts" class="mobile-menu__link">
+        Contact us
+      </a>
+      <a href="./menu/" class="mobile-menu__link mobile-menu__link--menu">
+        <span>Menu</span>
+        <img src="./assets/icons/coffee-cup.svg" alt="" class="mobile-menu__icon">
+      </a>
+    </nav>
+  </div>
+
 
   <main>
     <section class="menu">
@@ -164,6 +184,51 @@
       </div>
     </div>
   </footer>
+
+  <div class="product-modal" hidden>
+    <div class="product-modal__overlay">
+      <div class="product-modal__content" role="dialog" aria-modal="true" aria-labelledby="product-modal-title">
+        <div class="product-modal__image-box">
+          <img class="product-modal__image" src="" alt="">
+        </div>
+
+        <div class="product-modal__info">
+          <div>
+            <h2 class="product-modal__title" id="product-modal-title"></h2>
+            <p class="product-modal__description"></p>
+          </div>
+
+          <div>
+            <p class="product-modal__label">Size</p>
+            <div class="product-modal__options product-modal__sizes"></div>
+          </div>
+
+          <div>
+            <p class="product-modal__label">Additives</p>
+            <div class="product-modal__options product-modal__additives"></div>
+          </div>
+
+          <div class="product-modal__total">
+            <span>Total:</span>
+            <span class="product-modal__price"></span>
+          </div>
+
+          <div class="product-modal__note">
+            <span>ⓘ</span>
+            <p>
+              The cost is not final. Download our mobile app to see the final
+              price and place your order. Earn loyalty points and enjoy your
+              favorite coffee with up to 20% discount.
+            </p>
+          </div>
+
+          <button class="product-modal__close" type="button">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="../js/main.js"></script>
   <script src="../js/menu.js"></script>

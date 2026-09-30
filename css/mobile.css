@@ -209,4 +209,16 @@
     width: 200px;
     height: 64px;
   }
+
+  .product-modal__overlay {
+    padding: 19px;
+  }
+
+  .product-modal__content {
+    max-width: 342px;
+  }
+
+  .product-modal__image-box {
+    display: none;
+  }
 }
