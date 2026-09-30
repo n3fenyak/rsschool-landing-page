@@ -69,10 +69,30 @@
           <img src="../assets/icons/coffee-cup.svg" alt="" class="menu-link__icon">
         </div>
       </div>
-
-
     </div>
   </header>
+
+  <div class="mobile-menu">
+    <nav class="mobile-menu__nav">
+      <a href="#favorite-coffee" class="mobile-menu__link">
+        Favorite Coffee
+      </a>
+      <a href="#about" class="mobile-menu__link">
+        About
+      </a>
+      <a href="#mobile-app" class="mobile-menu__link">
+        Mobile App
+      </a>
+      <a href="#contacts" class="mobile-menu__link">
+        Contact us
+      </a>
+      <a href="./menu/" class="mobile-menu__link mobile-menu__link--menu">
+        <span>Menu</span>
+        <img src="./assets/icons/coffee-cup.svg" alt="" class="mobile-menu__icon">
+      </a>
+    </nav>
+  </div>
+
 
   <main>
     <section class="menu">
@@ -85,159 +105,25 @@
         </h1>
 
         <div class="menu__tabs">
-          <button class="menu-tab menu-tab--active" type="button">
+          <button class="menu-tab menu-tab--active" type="button" data-category="coffee">
             <span class="menu-tab__icon">☕</span>
             <span>Coffee</span>
           </button>
 
-          <button class="menu-tab" type="button">
+          <button class="menu-tab" type="button" data-category="tea">
             <span class="menu-tab__icon">🫖</span>
             <span>Tea</span>
           </button>
 
-          <button class="menu-tab" type="button">
+          <button class="menu-tab" type="button" data-category="dessert">
             <span class="menu-tab__icon">🍰</span>
             <span>Dessert</span>
           </button>
         </div>
 
-        <div class="menu__cards">
-          <article class="menu-card">
-            <div class="menu-card__image-box">
-              <img class="menu-card__image" src="../assets/images/coffee-1.png" alt="Irish coffee">
-            </div>
+        <div class="menu__cards"></div>
 
-            <div class="menu-card__description">
-              <div class="menu-card__info">
-                <h2 class="menu-card__title">Irish coffee</h2>
-                <p class="menu-card__text">
-                  Fragrant black coffee with Jameson Irish whiskey and whipped milk
-                </p>
-              </div>
 
-              <p class="menu-card__price">$7.00</p>
-            </div>
-          </article>
-
-          <article class="menu-card">
-            <div class="menu-card__image-box">
-              <img class="menu-card__image" src="../assets/images/coffee-2.png" alt="Kahlua coffee">
-            </div>
-
-            <div class="menu-card__description">
-              <div class="menu-card__info">
-                <h2 class="menu-card__title">Kahlua coffee</h2>
-                <p class="menu-card__text">
-                  Classic coffee with milk and Kahlua liqueur under a cap of frothed milk
-                </p>
-              </div>
-
-              <p class="menu-card__price">$7.00</p>
-            </div>
-          </article>
-
-          <article class="menu-card">
-            <div class="menu-card__image-box">
-              <img class="menu-card__image" src="../assets/images/coffee-3.png" alt="Honey raf">
-            </div>
-
-            <div class="menu-card__description">
-              <div class="menu-card__info">
-                <h2 class="menu-card__title">Honey raf</h2>
-                <p class="menu-card__text">
-                  Espresso with frothed milk, cream and aromatic honey
-                </p>
-              </div>
-
-              <p class="menu-card__price">$5.50</p>
-            </div>
-          </article>
-
-          <article class="menu-card">
-            <div class="menu-card__image-box">
-              <img class="menu-card__image" src="../assets/images/coffee-4.png" alt="Ice cappuccino">
-            </div>
-
-            <div class="menu-card__description">
-              <div class="menu-card__info">
-                <h2 class="menu-card__title">Ice cappuccino</h2>
-                <p class="menu-card__text">
-                  Cappuccino with soft thick foam in summer version with ice
-                </p>
-              </div>
-
-              <p class="menu-card__price">$5.00</p>
-            </div>
-          </article>
-
-          <article class="menu-card">
-            <div class="menu-card__image-box">
-              <img class="menu-card__image" src="../assets/images/coffee-5.png" alt="Espresso">
-            </div>
-
-            <div class="menu-card__description">
-              <div class="menu-card__info">
-                <h2 class="menu-card__title">Espresso</h2>
-                <p class="menu-card__text">
-                  Classic black coffee
-                </p>
-              </div>
-
-              <p class="menu-card__price">$4.50</p>
-            </div>
-          </article>
-
-          <article class="menu-card">
-            <div class="menu-card__image-box">
-              <img class="menu-card__image" src="../assets/images/coffee-6.png" alt="Latte">
-            </div>
-
-            <div class="menu-card__description">
-              <div class="menu-card__info">
-                <h2 class="menu-card__title">Latte</h2>
-                <p class="menu-card__text">
-                  Espresso coffee with the addition of steamed milk and dense milk foam
-                </p>
-              </div>
-
-              <p class="menu-card__price">$5.50</p>
-            </div>
-          </article>
-
-          <article class="menu-card">
-            <div class="menu-card__image-box">
-              <img class="menu-card__image" src="../assets/images/coffee-7.png" alt="Latte macchiato">
-            </div>
-
-            <div class="menu-card__description">
-              <div class="menu-card__info">
-                <h2 class="menu-card__title">Latte macchiato</h2>
-                <p class="menu-card__text">
-                  Espresso with frothed milk and chocolate
-                </p>
-              </div>
-
-              <p class="menu-card__price">$5.50</p>
-            </div>
-          </article>
-
-          <article class="menu-card">
-            <div class="menu-card__image-box">
-              <img class="menu-card__image" src="../assets/images/coffee-8.png" alt="Coffee with cognac">
-            </div>
-
-            <div class="menu-card__description">
-              <div class="menu-card__info">
-                <h2 class="menu-card__title">Coffee with cognac</h2>
-                <p class="menu-card__text">
-                  Fragrant black coffee with cognac and whipped cream
-                </p>
-              </div>
-
-              <p class="menu-card__price">$6.50</p>
-            </div>
-          </article>
-        </div>
         <button class="menu__refresh" type="button" aria-label="Show more products">
           <img class="menu__refresh-icon" src="../assets/icons/refresh.svg" alt="">
         </button>
@@ -299,7 +185,53 @@
     </div>
   </footer>
 
+  <div class="product-modal" hidden>
+    <div class="product-modal__overlay">
+      <div class="product-modal__content" role="dialog" aria-modal="true" aria-labelledby="product-modal-title">
+        <div class="product-modal__image-box">
+          <img class="product-modal__image" src="" alt="">
+        </div>
+
+        <div class="product-modal__info">
+          <div>
+            <h2 class="product-modal__title" id="product-modal-title"></h2>
+            <p class="product-modal__description"></p>
+          </div>
+
+          <div>
+            <p class="product-modal__label">Size</p>
+            <div class="product-modal__options product-modal__sizes"></div>
+          </div>
+
+          <div>
+            <p class="product-modal__label">Additives</p>
+            <div class="product-modal__options product-modal__additives"></div>
+          </div>
+
+          <div class="product-modal__total">
+            <span>Total:</span>
+            <span class="product-modal__price"></span>
+          </div>
+
+          <div class="product-modal__note">
+            <span>ⓘ</span>
+            <p>
+              The cost is not final. Download our mobile app to see the final
+              price and place your order. Earn loyalty points and enjoy your
+              favorite coffee with up to 20% discount.
+            </p>
+          </div>
+
+          <button class="product-modal__close" type="button">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="../js/main.js"></script>
+  <script src="../js/menu.js"></script>
 </body>
 
 </html>
